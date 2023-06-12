@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>History Course</title>
+        <link rel="stylesheet"  href="default.css">
+        </head>
+
+
+
+
+
+
+
+        <body>  
+            <header>
+          
+                    <div class="box area">
+                    
+                        <div class="wrapper"> 
+                            
+                               <nav>
+                                    <a href="contents.html"> &nbsp Contents &nbsp </a>
+                               </nav>
+                               
+                               <a href="index.html"><img src="images\logo.JPG" class="logo"></a> 
+                        </div>
+                
+            </header>
+
+
+            <main>
+                
+                <div class="content">
+                    <div class="wrapper">
+                    
+                        <hr/>
+                        <h1><font color= "#076d9c">3. References and Sources</font></h1>
+                    <hr/><br>
+                    
+                    <p>Now we will look at the “tools” of the historian; <font color= "#076d9c">sources</font>. This is how we claim to know what we know about the past. Without sources, 
+                        we only know what we do not know.</p>
+                        
+                        <p>Sources come in many forms; that is, a source is anything (or anyone) that informs the historian
+                         to the question being asked. How many different types of sources can you think of? Take some time to come up with a list and post it in the 
+                         text box below.</p></br>
+                    
+                         <p><center><TextArea id="txtArea" name='txtArea' rows="15" cols="100">Enter your answer here...</TextArea></center></p></br>
+                                
+                                
+                         <center><button onClick="showImage()">Post</button>
+                             <div id="first" style="display:none;">
+                                 <img src="images\resources\Capture1.PNG" style="width: 1100px;"> 
+                             </br></br></br></br>
+                                 <h1>Are all sources created equal?</h1> 
+                                 <hr/>
+
+                                 <p>All sources will have their own advantages and disadvantages. In general, no one type of source is essentially better 
+                                 than other types; it will depend on the context of how the source is being used and in relation to what topic. Later 
+                                 we will look at a common disadvantage all sources potentially share.</p> 
+
+                                 <p>For now, we will just identify two large categories sources can fall into.</p>  </br></br></br></br>
+                                </div>
+                               
+                             
+                 
+
+                             <script>
+                                 // Getting the <textarea> element and storing it as a variable
+                                 let textArea = document.getElementById("txtArea");
+                               
+                                 const showImage = () => {
+                               
+                                   // Your existing code
+                                   document.getElementById("first").style.display ='block';
+                               
+                                   // Storing the text area's value in local storage under the name/key "usersAnswer"
+                                   localStorage.usersAnswer = textArea.value;
+                                 };
+                               
+                                 // This if statement will run every time the page loads
+                                 // If there is a user's answer stored in local storage
+                                 if (localStorage.usersAnswer) {
+                               
+                                   // Retrieve the users answer and display it in the textarea
+                                   textArea.value = localStorage.usersAnswer;
+                                 }
+                               </script></center>
+                        
+                     
+
+                      
+
+
+
+
+                    </main>
+
+
+
+
+                    
+                    <footer>
+                        
+                                <br><br>
+                                <a href="aotearoaresearchtask.html" class="previous round">&#8249;</a>
+                                <span style="float:right;">
+                                    <a href="primarysecondary.html" class="next round">&#8250;</a>
+                                </span>
+                            </p>
+                        
+                    </footer>
+                   
+                </body>
+            
+            </html>  
+

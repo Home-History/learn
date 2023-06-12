@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>History Course</title>
+        <link rel="stylesheet"  href="default.css">
+        <script src="https://code.jquery.com/jquery-git.js"></script>
+    </head>
+
+    
+
+
+
+
+        <body>  
+            <header>
+               
+                    <div class="box area">
+                    
+                        <div class="wrapper">
+                            
+                               <nav>
+                                    <a href="contents.html">&nbsp Contents &nbsp </a>
+                               </nav>
+                               
+                               <a href="index.html"><img src="images\logo.JPG" class="logo"></a>
+                        </div>
+                
+            </header>
+
+
+            <main>
+                
+                <div class="content">
+                    <div class="wrapper">
+                   
+                   
+                    
+                        <hr/>
+                <h1>Bias in Sources cont.</h1> 
+                    <hr/><br>
+                    
+                    <p>
+                    Returning now to Parihaka, and the newspaper article from the previous page (THE STATE OF PARIHAKA. Taranaki Herald, Volume XXIX, Issue 3836, 12 September 1881, Page 2). For this 
+                    exercise, click to highlight any words or phrases that you think indicate bias in this article. As you highlight, think about how or why the words likely indicate bias by the author
+                    (or editor...).<br><br> When you are done, click the <strong>Post</strong> button.
+                    </p><br><br>
+
+                    <center><img src="images\resources\stateparihaka.PNG" style="width: 500px; height: auto;" alt="The State Of Parihaka"></center>
+                   
+                   <blockquote>
+                    
+                        From a reliable source we learn that the natives of Parihaka are in a deplorable state, consequent upon the idle habits which they have been indulging for over two years. 
+                        Since Parihaka became the centre of attraction to the surrounding tribes by the utterances of Te Whiti, the various settlements have been gradually decreasing until some 
+                        have entirely disappeared. The result has been that Parihaka has become crowded by an idle and useless lot of people who make no provision for themselves in any way,
+                         either by obtaining food or clothing. Te Whiti himself has been supported chiefly by contributions from natives outside Parihaka, who have sold their land and almost 
+                         everything belonging to them to give presents to the prophet, for the purpose of providing food for the monthly feasts. The result has been that the natives have not
+                          sown any crops this season, nor have they made any preparation for planting their old cultivations.
+                        
+                          The settlements present a neglected and forsaken appearance, and, indeed, that could scarcely be otherwise, seeing that the natives spend three weeks out of every month 
+                        at Parihaka. The natives are now beginning to feel the effects of their idle, improvident habits, for they are scantily clad, and have no money. To add to their misery,
+                         we are informed that they are fearfully affected with vermin at Parihaka, which has been induced by the crowded state of the whares and the want of cleanliness.
+                          Parihaka is absolutely filthy for want of sanitary precautions, and it is anticipated that as summer advances some pestilential disease will make its appearance. 
+                          It is consoling to know, however, that even if such a dire contingency did happen it would not be without its beneficial effects, as it would most likely drive the
+                           natives from Parihaka back to their old settlements, and the peace of the district would be secured for a time at least. If the amount of energy displayed by the 
+                           natives in erecting political fences was directed to the peaceful pursuits of cultivating the ground, it would be immeasurably better for them, and would prevent 
+                           the poverty and distress which must surely overtake them if the present course is pursued.</blockquote>
+                 
+                           <center><button onClick="showImage()">Post</button>
+                            <div id="first" style="display:none;">
+                                <img src="images\resources\Capture2.PNG"/> 
+                            </div>
+                              
+                            <script>
+                                // Getting the <textarea> element and storing it as a variable
+                                let textArea = document.getElementById("txtArea");
+                              
+                                const showImage = () => {
+                              
+                                  // Your existing code
+                                  document.getElementById("first").style.display ='block';
+                              
+                                  // Storing the text area's value in local storage under the name/key "usersAnswer"
+                                  localStorage.usersAnswer = textArea.value;
+                                };
+                              
+                                // This if statement will run every time the page loads
+                                // If there is a user's answer stored in local storage
+                                if (localStorage.usersAnswer) {
+                              
+                                  // Retrieve the users answer and display it in the textarea
+                                  textArea.value = localStorage.usersAnswer;
+                                }
+                              </script></center>
+                    
+                        </main>
+
+
+
+                    <script> words = $( "blockquote" ).first().text().split( /\s+/ );
+                        var text = words.join( "</span> <span>" );
+                        $( "blockquote" ).first().html( "<span>" + text + "</span>" );
+                        $( "span" ).on( "click", function() {
+                        $( this ).css( "background-color", "yellow" );
+                        });</script>
+
+
+                    
+                    <footer>
+                        
+                                <br><br>
+                                <a href="bias2.html" class="previous round">&#8249;</a>
+                                <span style="float:right;">
+                                    <a href="bias4.html" class="next round">&#8250;</a>
+                                </span>
+                            </p>
+                        
+                    </footer>
+                   
+                </body>
+            
+            </html>  
+

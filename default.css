@@ -1,0 +1,267 @@
+
+  
+
+
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #FFFFF7;
+	overflow-x: hidden;
+}
+
+h1{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: 'Playfair Display';
+	font-weight: 400;
+	font-size: 3rem;
+	color: #1a1e21;
+	text-align: center;
+	word-spacing: .5rem;
+	letter-spacing: .03rem;
+}
+ 
+h2{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: 'Playfair Display';
+	font-weight: 400;
+	font-size: 2.2rem;
+	color: #1a1e21;
+	text-align: center;
+	word-spacing: .5rem;
+	letter-spacing: .03rem;
+}
+
+html{
+	color: #202020
+}
+p{
+	
+	margin-left: 220px;
+	margin-right: 220px;
+	font-size: 22px;
+	font-family: Times , sans-serif;
+	text-align: left;
+    }
+
+	blockquote{
+		margin-left: 340px;
+		margin-right: 340px;
+		font-size: 22px;
+		font-family: Garamond;
+		text-align: justify;
+		}
+
+li{
+	margin-left: 220px;
+	margin-right: 220px;
+	font-size: 22px;
+	font-family: Times , sans-serif;
+	text-align: left;
+}
+
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+	
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	background: #fbf7f5;
+	position: relative;
+}
+
+nav{
+	float: right;
+	line-height: 100px;
+}
+
+nav a{
+	
+		position: relative;
+		margin: 0;
+		padding: 0;
+		font-family:'Nanum Myeongjo', serif;
+		font-weight: 300;
+		font-size: 2rem;
+		color: #1a1e21;
+		text-align: right;
+		word-spacing: .5rem;
+		letter-spacing: .04rem;
+	  }
+
+footer{
+		width: 100%;
+		height: 100px;
+		background: #fbf7f5;
+		position: absolute;
+		font-family: 'Nanum Myeongjo', serif;
+		
+	}
+
+	textarea{
+		font-size: 20px;
+		
+	}
+
+	span{
+		cursor: pointer;
+	}
+
+	sup{
+		color:#076d9c;
+	}
+		
+	abbr{
+		cursor: default;
+	}
+
+/* below nav button code */
+
+	a {
+        text-decoration: none;
+        display: inline-block;
+        
+      }
+      
+      .previous:hover {
+        background-color: #ddd;
+        color: black;
+      }
+	 
+	  .next:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .previous {
+        background-color: #009688;
+        color: black;
+        float: left;
+        margin-left: 50px;
+        position: absolute;
+      }
+      
+      .next {
+        background-color: #009688;
+        color: black;
+        float: right;
+        right: 50px;
+        position: absolute;
+        
+        
+      }
+      
+      .round {
+        border-radius: 60%;
+		padding: 8px 16px;
+      }
+	  				
+	  .image {
+  display: none;
+}
+
+/* below post button code */
+
+button:focus ~ .image{
+  display: block;
+
+  
+}
+
+
+
+button {
+	width: 100px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #009688;
+	background: transparent;
+	color: #202020;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+button:hover{
+	background-color: #009688;
+        color: black;
+}
+
+button:focus{
+	background-color: #009688;
+}
+
+.contactbox{
+	display: flex;
+}
+
+.contactleft{
+	flex-basis: 80%;
+	padding: 40px 60px;
+	
+}
+
+.contactright{
+	flex-basis: 20%;
+	padding: 40px ;
+
+	
+}
+
+.container{
+	width: 80%;
+	margin: 50px auto;
+	font-family: Times , sans-serif;
+}
+
+.inputrow{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.inputrow .inputgroup{
+	flex-basis: 45%;
+}
+
+input{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	padding-bottom: 5px;
+	
+}
+
+textarea{
+	width: 100%;
+	border: 1px solid #ccc;
+	outline: none;
+	padding: 10px;
+}
+
+label{
+margin-bottom: 6px;
+color: darkgray;
+
+}
+
+.contactleft h3{
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+figcaption{
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+}

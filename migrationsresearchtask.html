@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <title>History Course</title>
+        <link rel="stylesheet"  href="default.css">
+        </head>
+        
+        <body background="images\resources\WAITAHA.png" style="background-repeat: no-repeat;
+        background-attachment: fixed; background-size: auto;
+         background-position: right;"></body>
+
+
+
+
+
+        <body>  
+            <header>
+               
+                    <div class="box area">
+                    
+                        <div class="wrapper">
+                            
+                               <nav>
+                                    <a href="contents.html"> &nbsp Contents &nbsp </a>
+                               </nav>
+                               
+                               <a href="index.html"><img src="images\logo.JPG" class="logo"></a>
+                        </div>
+                
+            </header>
+
+
+            <main>
+                
+                <div class="content">
+                    <div class="wrapper">
+                        
+                        <hr/>
+                        <h1>Research Task</h1> 
+                        <hr/>
+                        <br/>
+                        <p>In this module you were introduced to some origin stories for the Polynesians who peopled New Zealand. These examples should also encourage you to think about the origins of historical narratives themselves.</p> 
+
+                            <li>Think about the sources of these origin stories and their purpose. What are they and what do they say about the people they describe?</li><br>
+                            
+                            <li>Who or where do the sources originate from? In what way may the narratives told benefit, or be of detriment to whom they are subject?</li><br>
+                            
+                                <li>Are there any competing theories to the narratives presented? If so, which do you think are more likely to be true, and why?</li><br>
+                            
+                                <p>Spend some time to do some research to obtain any extra required information that may answer your questions. You are encouraged to enter your answers in the text box below so we may return to them at later.</p></br>  
+                            
+                                <p><center><TextArea id="txtArea" name='txtArea' rows="15" cols="100">Enter your answer here...</TextArea></center></p></br>
+
+                                <center><button onClick="showImage()">Post</button>
+                                    <div id="first" style="display:none;">
+                                        
+                                       </div>
+                                      
+                                    
+                        
+       
+                                    <script>
+                                        // Getting the <textarea> element and storing it as a variable
+                                        let textArea = document.getElementById("txtArea");
+                                      
+                                        const showImage = () => {
+                                      
+                                          // Your existing code
+                                          document.getElementById("first").style.display ='block';
+                                      
+                                          // Storing the text area's value in local storage under the name/key "usersAnswer"
+                                          localStorage.usersAnswer = textArea.value;
+                                        };
+                                      
+                                        // This if statement will run every time the page loads
+                                        // If there is a user's answer stored in local storage
+                                        if (localStorage.usersAnswer) {
+                                      
+                                          // Retrieve the users answer and display it in the textarea
+                                          textArea.value = localStorage.usersAnswer;
+                                        }
+                                      </script></center>
+                        
+                       
+
+                            
+
+                         
+
+                      
+
+
+
+
+                    </main>
+
+
+                   
+
+                    
+                    <footer>
+                        
+                                <br><br>
+                                <a href="tangatawhenua.html" class="previous round">&#8249;</a>
+                                <span style="float:right;">
+                                    <a href="changinghistory.html" class="next round">&#8250;</a>
+                                </span>
+                            </p>
+                        
+                    </footer>
+                   
+                </body>
+            
+            </html>  
