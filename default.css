@@ -1,5 +1,5 @@
 
-  
+
 
 
 body{
@@ -41,24 +41,24 @@ html{
 }
 p{
 	
-	margin-left: 220px;
-	margin-right: 220px;
+	margin-left: 19%;
+	margin-right: 19%;
 	font-size: 22px;
 	font-family: Times , sans-serif;
 	text-align: left;
     }
 
 	blockquote{
-		margin-left: 340px;
-		margin-right: 340px;
+		margin-left: 28%;
+		margin-right: 28%;
 		font-size: 22px;
 		font-family: Garamond;
 		text-align: justify;
 		}
 
 li{
-	margin-left: 220px;
-	margin-right: 220px;
+	margin-left: 19%;
+	margin-right: 19%;
 	font-size: 22px;
 	font-family: Times , sans-serif;
 	text-align: left;
