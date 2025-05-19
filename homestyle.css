@@ -1,7 +1,9 @@
-body{
+body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 .navbar{
@@ -13,12 +15,7 @@ body{
 	justify-content: space-between;
 }
 
-.logo{
-	width: 150px;
-	cursor: pointer;
-	margin-left: 50px;
-	border: 1px solid black;
-}
+
 
 .navbar ul li{
 	list-style: none;
@@ -32,6 +29,7 @@ body{
 	color: #FFFFF7;
 	text-transform: uppercase;
 	font-size: larger;
+	
 }
 
 
